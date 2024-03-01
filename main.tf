@@ -1,4 +1,12 @@
 terraform {
+  cloud {
+    organization = "bp-assignment"
+
+    workspaces {
+      name = "bp-tf-assignment"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
